@@ -17,9 +17,8 @@ development:
   encoding: unicode
   database: reservester_development
   pool: 5
-  username: BartFlaherty
-  password:
-
+  host: localhost
+  port: 5432
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
@@ -45,7 +44,8 @@ test:
   pool: 5
   username: BartFlaherty
   password:
-
+  host: localhost
+  port: 5432
 production:
   adapter: postgresql
   encoding: unicode
@@ -53,3 +53,5 @@ production:
   pool: 5
   username: BartFlaherty
   password:
+  host: localhost
+  port: 5432
