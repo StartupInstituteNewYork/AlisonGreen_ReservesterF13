@@ -4,11 +4,20 @@
   <title>Reservester</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
+
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+	<div class="container">
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+  <% if current_owner %>
+  <%=  link_to "Sign out", destroy_owner_session_path(owner_session), method: :delete %>
+  <% else %>
+  <%= link_to "Sign in",  new_owner_session_path %>
+  <% end %>
+  <%= yield %>
+</div>
 
 </body>
 </html>
