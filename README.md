@@ -1,5 +1,5 @@
-AlisonGreen_ReservesterF13
+Reservester
 =======================
 
-Just testing out git settings
+Opentable clone written in Ruby on Rails
 
